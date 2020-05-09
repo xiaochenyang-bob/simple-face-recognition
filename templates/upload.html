@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Upload</title>
+    <style>
+        #upload-form{
+            margin-up: 5px
+        }
+    </style>
+</head>
+<body>
+<h1>Picture Uploader</h1>
+<form id="upload-form" action="{{ url_for('upload') }}" method="POST" enctype="multipart/form-data">
+    <label for="file">Photo</label>
+    <input type="file" id = "file" name = "file" accept="image/*" multiple/>
+    <br/>
+    <label for="name">Username</label>
+    <input type="text" id = "name" name="username">
+    <br/>
+    <input type="submit" value="Submit"/>
+</form>
+<button onclick="location.href='/'" type="button">Back</button>
+</body>
+</html>

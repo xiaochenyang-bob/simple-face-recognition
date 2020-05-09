@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        #button_box{
+            text-align: center;
+        }
+        #button_box button{
+            margin-right: 5px;
+        }
+
+    </style>
+</head>
+<body>
+<h1>Scan your face to login</h1>
+<div id = "button_box">
+    <button onclick="location.href='{{ url_for('login') }}'" type="button">Scan your face</button>
+    <button onclick="location.href='{{ url_for('register') }}'" type="button">Register</button>
+</a>
+</div>
+</body>
+</html>
